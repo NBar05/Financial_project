@@ -5,7 +5,7 @@ from scipy.optimize import minimize
 from scipy.stats import ncx2, chi2
 
 # Importing data with MosPrime rates
-data = pd.read_excel("/Users/nikitabaramiya/Desktop/MSU/5 семестр/Теория финансов/Finance project/MosPrime.xlsx", header=0)
+data = pd.read_excel("MosPrime.xlsx", header=0)
 for col in data.columns[1:]:
     data[col] = pd.to_numeric(data[col], errors='coerce')
 
